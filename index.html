@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>SkyWay Tutorial</title>
+</head>
+
+<body>
+    <video id="my-video" width="400px" autoplay muted playsinline></video>
+    <video id="my-capture" width="400px" autoplay muted playsinline></video>
+    <p>ID: <span id="my-id"></span></p>
+    <!-- 自分のIDの表示 -->
+    <div>
+        room name: <input id="room-name" type="text" />
+        <!-- room名の入力 -->
+        <button id="join">join room</button>
+        <!-- roomに入室 -->
+    </div>
+    <video id="my-video" width="400px" muted playsinline></video>
+    <div id="button-area"></div>
+    <!-- 対向をsubscribeするボタンを表示するエリア -->
+    <div id="their-media-area"></div>
+    <!-- 対向のaudio, video要素を表示するエリア -->
+    <script type="module" src="lib/app.js"></script>
+</body>
+
+</html>
